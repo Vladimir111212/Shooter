@@ -14,7 +14,7 @@ class GameSprite(sprite.Sprite):
     def reset(self):
         win.blit(self.image, (self.rect.x, self.rect.y))
 
-class Player(GameSprite):
+class Player(GameSprite):         #Класс игрок
     def update(self):
         if keys_press[K_a] and self.rect.x > -5:
             self.rect.x -= self.speed
